@@ -1,0 +1,40 @@
+.signInLogo{
+    width: 200px;
+    object-fit: contain;
+    padding: 10px 0px;
+}
+
+.signIn{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB1lN1hGZAj0MpZ1ZoN7tt7q38JyzTvjmSMQ&usqp=CAU");
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm{
+    background-color: rgb(164 138 138);
+    padding: 30px;
+    border: 1px solid rgb(129, 121, 121);
+    border-radius: 1px;
+}
+.loginForm2{
+    background-color: rgb(164 138 138);
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid rgb(129, 121, 121);
+    border-radius: 1px; 
+}
+
+#login-btn{
+    background-color: #1773EA;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    /* width: 80%; */
+    cursor: pointer;
+    margin-top: 8px;
+}

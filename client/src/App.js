@@ -12,11 +12,13 @@ import { LoginContext } from './context/LoginContext';
 import Modal from './components/Modal'
 import UserProfile from './components/Userprofile'
 import MyFollowingPost from './screens/MyFollowingPost';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function App() {
   const [userLogin, setUserLogin] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
   return (
+    <GoogleOAuthProvider clientId="283829304945-jf7dsbjma96l2i7e1ucl5077innd2snc.apps.googleusercontent.com">
     <BrowserRouter>
     <div className="App">
       <LoginContext.Provider value = {{setUserLogin, setModalOpen}}>
@@ -36,7 +38,7 @@ function App() {
       
     </div>
     </BrowserRouter>
-
+    </GoogleOAuthProvider>
   );
 }
 
